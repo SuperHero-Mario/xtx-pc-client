@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .box{
+            width: 319px;
+            height: 319px;
+            border: 1px solid black;
+            margin: 100px auto;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .box .mask{
+            position: absolute;
+            background-color: #27ba9b;
+            width: 319px;
+            height: 60px;
+            left:0;
+            bottom:-60px;
+            transition: bottom .3s;
+        }
+
+        .box:hover .mask{
+            bottom: 0;
+        }
+        
+    </style>
+</head>
+<body>
+    <div class="box">
+        <img src="./uploads/clothes_goods_1.jpg" alt="">
+        <div class="mask">
+            找相似
+        </div>
+    </div>
+</body>
+</html>
